@@ -1,0 +1,10 @@
+﻿"pistolet à entité" avec raycat pour choisir ou spawn entité selectionné
+menu avec scroll sur tablette pour selectionner entité depuis un dossier contenant les modèle a tester. 
+
+
+Spawn de:
+ - lumière dynamique
+ - Unity Particle system ?
+ - object 3d (cube) depuis une list de mesh dans le folder Mesh à coté de Assets
+
+Generation de Scene avec plus ou moins de light baked ?
