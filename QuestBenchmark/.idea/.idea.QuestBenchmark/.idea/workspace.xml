@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0708d540-b5bd-4f3d-9771-306007d92da7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/.sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Continuous Move.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Continuous Move.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Continuous Turn.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Continuous Turn.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Input Actions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Input Actions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Input Actions.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Input Actions.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Left Controller.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Left Controller.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Right Controller.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Right Controller.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Snap Turn.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Samples/XR Interaction Toolkit/2.0.0/Starter Assets/XRI Default Snap Turn.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Packages/packages-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a65ec694ace94c66b21b0f75a09463163c600/1c/69e37dcb/IPointerDownHandler.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25px8ifHeZnAsPLwRybFDX5s0VJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="swagger" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0708d540-b5bd-4f3d-9771-306007d92da7" name="Changes" comment="" />
+      <created>1646237673546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646237673546</updated>
+      <workItem from="1646237678124" duration="1675000" />
+      <workItem from="1647003151052" duration="4832000" />
+      <workItem from="1647353147487" duration="2866000" />
+      <workItem from="1647424041890" duration="3833000" />
+      <workItem from="1647529298037" duration="4939000" />
+      <workItem from="1647620378852" duration="2269000" />
+      <workItem from="1647865738176" duration="2000" />
+      <workItem from="1647865761104" duration="7034000" />
+      <workItem from="1647952587944" duration="628000" />
+      <workItem from="1648043408964" duration="9951000" />
+      <workItem from="1648125318158" duration="613000" />
+      <workItem from="1648204561057" duration="2216000" />
+      <workItem from="1648208664702" duration="7769000" />
+      <workItem from="1648459531142" duration="19626000" />
+      <workItem from="1648543181817" duration="8670000" />
+      <workItem from="1648635292345" duration="5129000" />
+      <workItem from="1648715943038" duration="5733000" />
+      <workItem from="1648815248722" duration="136000" />
+      <workItem from="1648815401403" duration="4299000" />
+      <workItem from="1648827669363" duration="785000" />
+      <workItem from="1649080780399" duration="2743000" />
+      <workItem from="1649151307278" duration="2838000" />
+      <workItem from="1649242216014" duration="11662000" />
+      <workItem from="1649327178974" duration="7695000" />
+      <workItem from="1649339121057" duration="6820000" />
+      <workItem from="1649677264088" duration="6555000" />
+      <workItem from="1649754552527" duration="3270000" />
+      <workItem from="1649844357950" duration="11000" />
+      <workItem from="1649844385927" duration="6720000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
