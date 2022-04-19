@@ -55,12 +55,16 @@ namespace Script
                 var triangleCount = checked((uint)model.GetComponent<MeshFilter>().sharedMesh.triangles.Length / 3);
                 
                 //Add a component to each model and sets its triangleCount
-                model.AddComponent<ModelCopy>().Set(triangleCount, this);
+                var component = model.GetComponent<ModelCopy>();
+                if (component == null)
+                    component = model.AddComponent<ModelCopy>();
+                component.Set(triangleCount, this);
                 
                 TriangleList.Add(triangleCount);
                 
                 // Set the List of model without rigidBodies
                 var modelCopy = Instantiate(model);
+                modelCopy.SetActive(false);
                 if (modelCopy.GetComponent<XRGrabInteractable>() != null)
                     Destroy(modelCopy.GetComponent<XRGrabInteractable>());
                 if (modelCopy.GetComponent<Rigidbody>() != null)
@@ -94,7 +98,9 @@ namespace Script
         public void ToolCreate(Vector3 position)
         {
             if (logs) Debug.Log($"Create: {Selected.name}");
-            Instantiate(Selected, position, Quaternion.identity, copy.transform);
+            var instance = Instantiate(Selected, position, Quaternion.identity, copy.transform);
+            if (!instance.activeSelf)
+                instance.SetActive(true);
             UpdateText(objNbUpdate.Increment);
         }
         public void ToolDestroy(GameObject obj)
