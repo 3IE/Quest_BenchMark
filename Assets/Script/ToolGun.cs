@@ -9,7 +9,7 @@ namespace Script
     public class ToolGun : MonoBehaviour
     {
         [SerializeField] private bool logs;
-        [SerializeField] private GameObject Selected;
+        public GameObject Selected;
         private int indexSelected;
         
         private GameObject copy;

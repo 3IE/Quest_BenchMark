@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace Script.UI
 {
-    public class Decrease : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+    public class ScaleDecrease : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         [SerializeField] private ScaleNb ScaleNb;
         private bool _isPressed;
