@@ -12,7 +12,7 @@ namespace Script
         public GameObject Selected;
         private int indexSelected;
         
-        private GameObject copy;
+        public GameObject copy;
 
         private long objNb;
         private ulong triangleNb;
@@ -74,7 +74,6 @@ namespace Script
             
             objNb = 0;
             ItemScale = itemScale;
-            copy = Instantiate(new GameObject("copy"), Vector3.zero, Quaternion.identity);
         }
 
         private void Start()
@@ -122,8 +121,8 @@ namespace Script
         {
             if (logs) Debug.Log("Destroy all");
             foreach (Transform child in copy.transform)
-                Destroy(child.gameObject); 
-            UpdateText(objNbUpdate.Reset);
+                Destroy(child.gameObject);
+            //UpdateText(objNbUpdate.Reset);
         }
         
         private enum objNbUpdate {

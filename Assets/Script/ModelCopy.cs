@@ -7,12 +7,10 @@ namespace Script
         [SerializeField] private uint triangleCount;
         [SerializeField] private ToolGun toolGun;
 
-        public void Set(uint triangleC, ToolGun toolG = null) {
+        public void Set(uint triangleC, ToolGun toolG = null)
+        {
             triangleCount = triangleC;
-            if (toolG != null)
-                toolGun = toolG;
-            else
-                FindObjectOfType<ToolGun>();
+            toolGun = toolG != null ? toolG : FindObjectOfType<ToolGun>();
         }
         private void OnDestroy()
             => toolGun.ModelDestroyed(triangleCount);

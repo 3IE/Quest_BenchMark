@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Script.UI
 {
@@ -8,7 +7,6 @@ namespace Script.UI
     {
         [SerializeField] private ToolGun _toolGun;
         private TextMeshProUGUI m_Text;
-        private PointerEventData _pointerEventData;
 
         private void Start()
         {
@@ -24,7 +22,7 @@ namespace Script.UI
 
         public void Decrement()
         {
-            //Itemsclale cannot go below 1
+            //ItemScale cannot go below 1
             if (_toolGun.ItemScale <= 1.0f) return;
             
             _toolGun.ItemScale--;
