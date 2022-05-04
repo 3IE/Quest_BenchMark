@@ -78,7 +78,8 @@ namespace Script
 
         private void Start()
         {
-            //if (logs) Debug.Log($"{modelList.Count} models loaded");
+            ////if (logs) Debug.Log($"{modelList.Count} models loaded");
+            
             //Setup of the duplicated object
             Selected = modelList[0]; // possibly null
             indexSelected = 0;
@@ -122,7 +123,6 @@ namespace Script
             if (logs) Debug.Log("Destroy all");
             foreach (Transform child in copy.transform)
                 Destroy(child.gameObject);
-            //UpdateText(objNbUpdate.Reset);
         }
         
         private enum objNbUpdate {

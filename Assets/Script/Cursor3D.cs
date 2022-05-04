@@ -7,8 +7,6 @@ namespace Script
     public class Cursor3D : MonoBehaviour
     {
         public const float speed = 0.1f;
-        public const float holdTime = 0.5f;
-        public const float holdInterval = 0.1f;
         [SerializeField] private bool Logs;
         [SerializeField] private GameObject _origin;
         [SerializeField] private ToolGun _toolGun;
@@ -71,8 +69,6 @@ namespace Script
         {
             var inputVector = _inputActions.Cursor3D.Cursor.ReadValue<Vector2>();
             
-            //if (Logs) Debug.Log($"Cursor:\tMove:{inputVector}");
-            
             transform.Translate(new Vector3(0,0, inputVector.y) * speed);
             
             //The cursor cannot go behind the hand
@@ -89,10 +85,5 @@ namespace Script
         
         private void OnTriggerExit(Collider collision)
             => TobeDestroyed = null;
-
-        /*
-        private void OnEnable() => _inputActions.Cursor3D.Enable();
-        private void OnDisable() => _inputActions.Cursor3D.Disable();
-        */
     }
 }

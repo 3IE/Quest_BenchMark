@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Script
 {
     public class RefreshList : MonoBehaviour
-    {
+    { // Not in use, as the Scrolling list given by Unity breaks in the Build
         public bool logs;
         private GameObject[] modelList;
         [SerializeField] private GameObject buttonTemplate;

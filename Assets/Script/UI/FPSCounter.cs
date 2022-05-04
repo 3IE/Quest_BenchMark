@@ -12,7 +12,8 @@ namespace Script.UI
         private void Start()
         {
             m_Text = GetComponent<TextMeshProUGUI>();
-            InvokeRepeating(nameof(FPS), 1, 1);
+            InvokeRepeating(nameof(FPS), 1, 0.1f);
+                
         }
 
         private void FPS()

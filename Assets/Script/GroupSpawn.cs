@@ -6,6 +6,7 @@ namespace Script
     public class GroupSpawn : MonoBehaviour
     {
         private ToolGun _toolGun;
+        
         public uint nbObjects;
         public float distanceBetweenObjects;
         public float distanceFromPlayer;
@@ -19,6 +20,13 @@ namespace Script
                     "Distance between objects, distance from player or height are negative");
         }
         
+        private Vector3 RotatePointAroundPivotByYRotation(Vector3 point, Vector3 pivot, float angle) {
+            var dir = point - pivot; // get point direction relative to pivot
+            dir = Quaternion.Euler(0, angle, 0) * dir; // rotate it
+            point = dir + pivot; // calculate rotated point
+            return point; // return it
+        }
+        
         public void SpawnGroup()
         {
             uint squareSide = (uint) Mathf.Ceil(Mathf.Sqrt(nbObjects));
@@ -26,9 +34,7 @@ namespace Script
             var transformPosition = Camera.main!.transform.position;
             
             //Rotation on the Y axis of the Camera in degree
-            var rotationY = Camera.main!.transform.rotation.eulerAngles.y;
-            
-            Debug.Log($"GroupSpawn: forward '{rotationY}'");
+            var rotationY = Camera.main!.transform.eulerAngles.y;
             
             uint n = 0;
             for (uint i = 0; n < nbObjects; i++) {
@@ -36,15 +42,13 @@ namespace Script
                     // I might want to have this depend on the ItemScale of the object too
                     var defaultPosition = new Vector3(
                         transformPosition.x - distanceBetweenObjects * j + distanceBetweenObjects * squareSideHalf,
-                        transformPosition.y + height, 
+                        height, 
                         transformPosition.z + distanceFromPlayer + distanceBetweenObjects * i);
                     
-                    //rotate the default position by player look forward
-                    //var rotatedPosition = new Vector3(Mathf.Cos(-rotationY) - Mathf.Sin(-rotationY), 0, Mathf.Sin(-rotationY) + Mathf.Cos(-rotationY)) * defaultPosition;
+                    var rotatedPosition = RotatePointAroundPivotByYRotation(defaultPosition,
+                        new Vector3(transformPosition.x, height, transformPosition.z), rotationY);
                     
-                    //Debug.Log($"GroupSpawn: default position '{defaultPosition}'\n\t\tspawn position '{rotatedPosition}'");
-                    
-                    _toolGun.ToolCreate(defaultPosition);
+                    _toolGun.ToolCreate(rotatedPosition);
                 }
             }
         }

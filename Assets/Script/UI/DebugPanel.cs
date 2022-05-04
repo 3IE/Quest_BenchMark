@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Script.UI
 {
     public class DebugPanel : MonoBehaviour
-    {
+    { // Useful to debug even in the build
         //#if !UNITY_EDITOR
         static string myLog = "";
         private string output;
