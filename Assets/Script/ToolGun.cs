@@ -46,8 +46,8 @@ namespace Script
         public List<uint> TriangleList => triangleList;
 
         private void Awake() {
-            //logs = Application.isEditor && logs;
-
+            
+            //OVRPlugin.systemDisplayFrequency = 90.0f;
             simpleModelList = new List<GameObject>(); // make a list of copy of the modelList
             triangleList = new List<uint>();
             foreach (var model in modelList)

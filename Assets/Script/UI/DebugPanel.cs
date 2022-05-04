@@ -8,7 +8,6 @@ namespace Script.UI
         //#if !UNITY_EDITOR
         static string myLog = "";
         private string output;
-        private string stack;
         private TextMeshProUGUI m_Text;
 
         private void Start()
@@ -23,7 +22,6 @@ namespace Script.UI
         public void Log(string logString, string stackTrace, LogType type)
         {
             output = logString;
-            stack = stackTrace;
             myLog = output + "\n" + myLog;
             if (myLog.Length > 5000)
                 myLog = myLog.Substring(0, 4000);
