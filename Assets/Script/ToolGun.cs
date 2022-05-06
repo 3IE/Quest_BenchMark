@@ -15,7 +15,7 @@ namespace Script
         public GameObject copy;
 
         private long objNb;
-        private ulong triangleNb;
+        public ulong triangleNb;
         
         [SerializeField] private TMP_Text objNb_text;
         [SerializeField] private TMP_Text triangleNb_text;
@@ -47,7 +47,8 @@ namespace Script
 
         private void Awake() {
             
-            //OVRPlugin.systemDisplayFrequency = 90.0f;
+            OVRPlugin.systemDisplayFrequency = 90.0f;
+            
             simpleModelList = new List<GameObject>(); // make a list of copy of the modelList
             triangleList = new List<uint>();
             foreach (var model in modelList)

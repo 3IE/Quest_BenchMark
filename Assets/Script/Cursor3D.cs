@@ -34,11 +34,21 @@ namespace Script
 
         private IEnumerator HoldB(InputAction inputAction)
         {
+            var hitCollider = new Collider[1];
+            Physics.OverlapSphereNonAlloc(
+                transform.position, 0.05f, hitCollider, 1 << 8); // 8 is the layer of objects
+            
+            TobeDestroyed = hitCollider[0] == null ? null : hitCollider[0].gameObject;
+            
             _toolGun.ToolDestroy(TobeDestroyed);
             
             yield return new WaitForSeconds(0.7f);
             while (inputAction.IsPressed())
             {
+                Physics.OverlapSphereNonAlloc(
+                    transform.position, 0.05f, hitCollider, 1 << 8);
+                TobeDestroyed = hitCollider[0] == null ? null : hitCollider[0].gameObject;
+
                 _toolGun.ToolDestroy(TobeDestroyed);
                 yield return new WaitForSeconds(0.1f);
             }
@@ -76,14 +86,5 @@ namespace Script
                 transform.SetPositionAndRotation(
                     _origin.transform.position, _origin.transform.rotation);
         }
-
-        private void OnTriggerStay(Collider other)
-        {
-            if (Logs) Debug.Log($"Cursor:\tEnter:{other.name}");
-            TobeDestroyed = other.gameObject;
-        }
-        
-        private void OnTriggerExit(Collider collision)
-            => TobeDestroyed = null;
     }
 }
